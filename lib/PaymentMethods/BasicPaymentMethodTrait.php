@@ -173,6 +173,13 @@ trait BasicPaymentMethodTrait
             throw new UndefinedTransactionModeException('Transaction mode is not set');
         }
 
+        if (in_array($this->getRequest()->getPayment()->getCode(), ['IV.RV', 'IV.RF'])) {
+            if ($mode === TransactionMode::LIVE) {
+                return ApiConfig::CANCEL_LIVE_URL;
+            }
+            return ApiConfig::CANCEL_TEST_URL;
+        }
+
         if ($mode === TransactionMode::LIVE) {
             return ApiConfig::LIVE_URL;
         }

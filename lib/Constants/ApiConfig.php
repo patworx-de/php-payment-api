@@ -22,4 +22,7 @@ class ApiConfig
 
     const LIVE_URL = 'https://heidelpay.hpcgw.net/ngw/post';
     const TEST_URL = 'https://test-heidelpay.hpcgw.net/ngw/post';
+
+    const CANCEL_TEST_URL = 'https://test-heidelpay.hpcgw.net/ngw/transaction/cancel';
+    const CANCEL_LIVE_URL = 'https://heidelpay.hpcgw.net/ngw/transaction/cancel';
 }
