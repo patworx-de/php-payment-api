@@ -1,5 +1,5 @@
 {
-    "name": "heidelpay/php-payment-api",
+    "name": "patworx-de/heidelpay-php-payment-api",
     "description": "New client library for heidelpay payments replacing heidelpay/php-api.",
     "license": "proprietary",
     "require": {
